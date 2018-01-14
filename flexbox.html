@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flexbox布局</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0 user-scalabel=no">
+	<style type="text/css">
+		.content{display: flex;position: relative;
+			align-items: center;justify-content: space-between;padding: 0 20px;
+			margin-top:10px;}
+		.content div{width:150px;}
+		.box1{height:120px;border:1px solid #f00;}
+		.box2{height:100px;border:1px solid #f00;}
+		.box3{height:40px;border:1px solid #f00;}
+		.box4{height:200px;border:1px solid #0f0;}
+		@media (max-width:640px){
+			.content{
+			align-items:flex-start;justify-content: space-between;
+			flex-wrap: wrap;}
+			.content div:nth-child[4]{
+				order:-1;
+			}
+		}
+		@media (min-width:641px) {
+			.content{
+				align-items: center;justify-content: space-between;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+	</div>
+</body>
+</html>
