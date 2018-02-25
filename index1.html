@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东明暗效果图</title>
+	<style type="text/css">
+		*{margin:0;padding:0;
+			list-style: none;}
+		.piclist{
+			background:#000;
+			width:642px;
+			font-size: 0;
+			line-height:0;
+			margin:50px auto;
+		}
+		.piclist li{display: inline-block;width:200px;height:150px;margin:2px;border:5px solid #fff;-webkit-transition: all .9s ease;
+transition: all .9s ease;}
+		.piclist:hover li:not(:hover){
+			opacity: .7;
+			filter:blur(2px) grayscale(1);
+			-webkit-filter:blur(2px) grayscale(1);filter:blur(2px) grayscale(1);
+	
+		}
+	</style>
+</head>
+<body>
+	<ul class="piclist"> 
+		<li><img src="img/1.jpg" alt="" width="200px" height="150px"></li>
+		<li><img src="img/天泽2.jpg" alt="" width="200px" height="150px"></li>
+		<li><img src="img/3.jpg" alt="" width="200px" height="150px"></li>
+		<li><img src="img/4.jpg" alt="" width="200px" height="150px"></li>
+		<li><img src="img/5.jpg" alt="" width="200px" height="150px"></li>
+		<li><img src="img/6.jpg" alt="" width="200px" height="150px"></li>
+	</ul>
+</body>
+</html>
